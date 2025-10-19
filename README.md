@@ -52,31 +52,32 @@ cd backend
 npm install
 ```
 ▶️ Run the Server
+```bash
 # Development mode (with nodemon if installed)
 npm run dev
 
 # OR normal mode
 npm start
-
+```
 
 Server will start on:
-
+```
 http://localhost:5000
-
+```
 
 You should see:
-
+```
 Server running on port 5000
 MongoDB Connected
-
+```
 ⚙️ Configuration
 
 Create a .env file in the root of the backend directory and add:
-
+```
 PORT=5000
 MONGO_URI=your-mongodb-connection-string
 JWT_SECRET=your_secret_key   # optional for auth
-
+```
 
 Replace your-mongodb-connection-string with the connection URL from MongoDB Atlas.
 
@@ -98,29 +99,21 @@ backend/
 You can use [Postman] or cURL to test the routes.
 
 Example:
-
+```
 GET http://localhost:5000/
-
+```
 
 Response:
-
+```
 "API is running ..."
-
+```
 🧑‍🤝‍🧑 Contributors
 
-Backend: Your Name
+Backend: S Rahul Kanth
 
-Frontend: Collaborator Name
+Frontend: Revathi Miriyam
 
-📝 Future Enhancements
 
-Authentication & Authorization
-
-Budget tracking
-
-Reports & analytics
-
-Deployment with Docker
 ├── models/ # Mongoose models (User, Account, Transaction)
 ├── controllers/ # Business logic for each route
 ├── routes/ # API routes

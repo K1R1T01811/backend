@@ -43,13 +43,14 @@ MongoDB Atlas
  account or local MongoDB instance
 
 🧑‍💻 Installation
+```bash
 # Clone this repository
 git clone <your-backend-repo-url>
 cd backend
 
 # Install dependencies
 npm install
-
+```
 ▶️ Run the Server
 # Development mode (with nodemon if installed)
 npm run dev

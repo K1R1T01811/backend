@@ -1,26 +1,125 @@
-#  Personal Finance Management (PFM) Dashboard — Backend
+Personal-Finance-Management — Backend
 
-## Overview
-The **backend** of the Personal Finance Management Dashboard is built using **Node.js**, **Express.js**, and **MongoDB**.  
-It provides secure authentication, database connectivity, and API endpoints for managing users, transactions, and accounts.
+A web-based Personal Finance Management system with separate frontend and backend modules.
+This repository contains the backend API built using Node.js, Express, and MongoDB, designed to handle data, transactions, and future authentication.
 
-This backend acts as the bridge between the frontend and the database, ensuring data security and smooth communication.
+🚀 Features
 
----
+RESTful API endpoints for managing transactions
 
-## Tech Stack
-- **Node.js**
-- **Express.js**
-- **MongoDB** with Mongoose
-- **JWT** (JSON Web Token) for authentication
-- **dotenv** for environment variables
-- **CORS** enabled
+Add, edit, delete, and fetch transaction records
 
----
+Secure database connection using environment variables
 
-## Project Structure
+Structured project architecture (MVC pattern)
+
+Middleware setup for future authentication and error handling
+
+CORS enabled for frontend communication
+
+🧰 Tech Stack
+
+Node.js — Runtime environment
+
+Express.js — Backend framework
+
+MongoDB (with Mongoose) — Database
+
+dotenv — Environment variable management
+
+cors — Cross-origin requests
+
+jsonwebtoken, bcryptjs — (for future authentication support)
+
+📥 Getting Started
+✅ Prerequisites
+
+Node.js
+ installed
+
+npm as a package manager
+
+MongoDB Atlas
+ account or local MongoDB instance
+
+🧑‍💻 Installation
+# Clone this repository
+git clone <your-backend-repo-url>
+cd backend
+
+# Install dependencies
+npm install
+
+▶️ Run the Server
+# Development mode (with nodemon if installed)
+npm run dev
+
+# OR normal mode
+npm start
+
+
+Server will start on:
+
+http://localhost:5000
+
+
+You should see:
+
+Server running on port 5000
+MongoDB Connected
+
+⚙️ Configuration
+
+Create a .env file in the root of the backend directory and add:
+
+PORT=5000
+MONGO_URI=your-mongodb-connection-string
+JWT_SECRET=your_secret_key   # optional for auth
+
+
+Replace your-mongodb-connection-string with the connection URL from MongoDB Atlas.
+
+📂 Folder Structure
 backend/
 │
+├── config/              # Database config
+├── controllers/         # Business logic
+├── middleware/          # Middlewares (auth, error handling)
+├── models/              # Mongoose models
+├── routes/              # API routes
+├── .env                 # Environment variables
+├── package.json
+├── server.js            # Main entry point
+└── README.md
+
+🧪 API Test
+
+You can use [Postman] or cURL to test the routes.
+
+Example:
+
+GET http://localhost:5000/
+
+
+Response:
+
+"API is running ..."
+
+🧑‍🤝‍🧑 Contributors
+
+Backend: Your Name
+
+Frontend: Collaborator Name
+
+📝 Future Enhancements
+
+Authentication & Authorization
+
+Budget tracking
+
+Reports & analytics
+
+Deployment with Docker
 ├── models/ # Mongoose models (User, Account, Transaction)
 ├── controllers/ # Business logic for each route
 ├── routes/ # API routes

@@ -111,8 +111,6 @@ Response:
 
 Backend: S Rahul Kanth
 
-Frontend: Revathi Miriyam
-
 
 ├── models/ # Mongoose models (User, Account, Transaction)
 ├── controllers/ # Business logic for each route
